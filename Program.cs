@@ -100,7 +100,6 @@ namespace Infrastructure.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new ClienteConfiguration());
             modelBuilder.ApplyConfiguration(new LivroConfiguration());
             modelBuilder.ApplyConfiguration(new PedidoConfiguration());
